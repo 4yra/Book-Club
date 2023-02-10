@@ -4,10 +4,8 @@ import leval from '../../static/leval.png'
 import user from '../../static/user.png'
 export const UserAcountDashboard =() => {
     const userLevelBadge = {
-
         height: '100px',
         width: '100px',
-
     }
     const startBookClubBTN = {
         height: '40px',
