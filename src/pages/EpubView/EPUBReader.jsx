@@ -51,11 +51,7 @@ export const EPUBReader = () => {
           showToc={true}
         />
       </div>
-      <div
-          style={{
-
-          }}
-        >
+      <div className='pageView'>
           {page}
         </div>
 
