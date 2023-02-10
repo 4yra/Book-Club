@@ -2,7 +2,7 @@
   --bgc: white;
   --text: black;
   --topNavHeight: 50px;
-  --bottomNavHeight: 50px;
+  --bottomNavHeight: 60px;
 }
 
 .App {
@@ -46,11 +46,12 @@
   top: var(--topNavHeight);
   bottom: var(--bottomNavHeight);
   left: 0; right: 0;
-  height: calc(100% - 140px);
+  height: calc(100% - calc(var(--bottomNavHeight) + var(--topNavHeight)) - 40px);
   width: 90%;
   max-width: 1000px;
   margin: 20px auto 20px auto;
   border: solid 1px black;
+  overflow-y: scroll ;
 }
 
 .bgImage {
