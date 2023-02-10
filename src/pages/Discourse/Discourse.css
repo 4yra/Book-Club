@@ -3,7 +3,7 @@
     border: solid black 1px;
     width: 90%;
     max-width: 600px;
-    height: calc(100% - 260px);
+    height: 100%;
     border-radius: 10px;
     bottom: 0;
     margin: 10px auto 20px auto;
@@ -12,8 +12,10 @@
 
 
 .textFieldBox {
-    position: relative;
-    margin: 0 auto;
+    position: static;
+    margin: 0 auto 20px auto;;
+    bottom: 0;
+    border: solid black 1px;;
     right: 0;
     left: 0;
     width: 80vw;

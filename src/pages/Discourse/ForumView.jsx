@@ -57,7 +57,7 @@ export const ForumView = () => {
         getPosts()
     }
     return (
-        <Stack style={{position: 'relative', height:'calc(100vh - 80px)'}}>
+        <Stack style={{position: 'static', height:'100%'}}>
             <div className='discourseDiv'>
                 
                 {posts.map(c => (
