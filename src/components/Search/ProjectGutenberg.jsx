@@ -51,7 +51,7 @@ export const SearchProjectGutenberg = () => {
                 </form>
                 <div style={SearchResultsDiv} >
                     {result && result.map(item => <Stack direction='row' style={{display:'flex', justifyContent:'flex-start', alignItems:'center'}} key={item.id}>
-                        <a style={{color:'white', textDecoration:'none'}} href={item.formats['application/x-mobipocket-ebook']}>
+                        <a style={{color:'white', textDecoration:'none'}} href={item.formats['application/epub+zip']}>
                             <div style={{textAlign:'center', border:'solid red 1px', margin:'2px 5px 2px 2px', padding:'2px 0 2px 0', borderRadius:'5px'}}>
                                 <DownloadIcon />
                                 <p style={{fontSize:'0.4rem', margin:'2px'}}>DOWNLOAD</p>
