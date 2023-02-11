@@ -9,7 +9,6 @@ export const BookClubDashboard =() => {
         width: '100px',
         borderRadius: '10px'
     }
-
     return (
         <div >
             <Stack spacing={2} style={{padding:"20px", position:"relative"}}> 

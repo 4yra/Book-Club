@@ -1,8 +1,14 @@
 :root {
   --bgc: white;
   --text: black;
-  --topNavHeight: 50px;
-  --bottomNavHeight: 60px;
+  --topNavHeight: 40px;
+  --bottomNavHeight: 40px;
+}
+body {
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -27,6 +33,7 @@
 }
 .TopNav p {
   margin-right:20px ;
+  font-size: 0.7rem;
 }
 .BottomNav {
   position:fixed;
@@ -41,15 +48,15 @@
   font-weight: 700
 }
 
-.UseraccountDashboardDIV {
+.mainDiv {
   position: fixed;
   top: var(--topNavHeight);
   bottom: var(--bottomNavHeight);
   left: 0; right: 0;
-  height: calc(100% - calc(var(--bottomNavHeight) + var(--topNavHeight)) - 40px);
-  width: 90%;
+  height: calc(100% - calc(var(--bottomNavHeight) + var(--topNavHeight)) - 10px);
+  width: 95%;
   max-width: 1000px;
-  margin: 20px auto 20px auto;
+  margin: 5px auto 5px auto;
   border: solid 1px black;
   overflow-y: scroll ;
 }
@@ -59,15 +66,20 @@
     to bottom,
     rgba(0, 0, 0, 0.9),
     rgba(0, 0, 0, 0.2)
-  ), url("./static/leaf.jpg");
+  ), url("./static/leafSmall.jpg");
   background-size: cover;
 
+}
+.searchBGImage {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.4)
+  ), url("./static/search_.jpg");
+  background-size: cover;
 }
 
 .LoginForm {
   width: 80%;
   max-width: 300px;
-}
-.icons {
-  
 }

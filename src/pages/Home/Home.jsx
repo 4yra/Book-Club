@@ -18,10 +18,10 @@ import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 
 import Stack from "@mui/material/Stack"
 export const Home = () => {
-    const [userAcountDashboard, setUserAcountDashboard] = useState(true);
     const [bookClubDashboard, setBookClubDashboard] = useState(false);
-    const [epubReader, setEPUBReader] = useState(false);
+    const [userAcountDashboard, setUserAcountDashboard] = useState(true);
     const [discourse, setDiscourse] = useState(false);
+    const [epubReader, setEPUBReader] = useState(false);
 
     const navigate = useNavigate()
     const {dispatch} = useContext(AuthContext);
@@ -62,9 +62,9 @@ export const Home = () => {
         
         <div>
             <div className="TopNav" style={{ backgroundColor: 'black '}} >
-                <p onClick={signOutUser}>SignOut</p>
+                <p onClick={signOutUser}>Sign out</p>
             </div>
-            <div className="UseraccountDashboardDIV">
+            <div className="mainDiv">
                 {userAcountDashboard ? <UserAcountDashboard /> : null}
                 {bookClubDashboard ? <BookClubDashboard /> : null}
                 {epubReader ? <EPUBReader /> : null}
@@ -74,10 +74,22 @@ export const Home = () => {
             
             <div className="BottomNav" >
                 <Stack direction="row" spacing={6}>
-                    <GridViewOutlinedIcon onClick={ViewBookClubDashboard}/>
-                    <PersonOutlineOutlinedIcon onClick={ViewUserAcountDashboard}/>
-                    <ChatOutlinedIcon onClick={ViewDiscourse}/>
-                    <AutoStoriesOutlinedIcon onClick={ViewEPUBReader}/>
+                    <div style={bookClubDashboard? {color:"yellow"} : null} onClick={ViewBookClubDashboard}>
+                        <GridViewOutlinedIcon />
+                        <p style={{fontSize:'0.5rem', margin:'-4px 0 0 0', letterSpacing:'0.1rem', fontWeight:'lighter'}}>CLUBS</p>
+                    </div>
+                    <div style={userAcountDashboard? {color:"yellow"} : null} onClick={ViewUserAcountDashboard}>
+                        <PersonOutlineOutlinedIcon />
+                        <p style={{fontSize:'0.5rem', margin:'-4px 0 0 0', letterSpacing:'0.1rem', fontWeight:'lighter'}}>USER</p>
+                    </div>
+                    <div style={discourse? {color:"yellow"} : null} onClick={ViewDiscourse}>
+                        <ChatOutlinedIcon />
+                        <p style={{fontSize:'0.5rem', margin:'-4px 0 0 0', letterSpacing:'0.1rem', fontWeight:'lighter'}}>FORUM</p>
+                    </div>
+                    <div style={epubReader? {color:"yellow"} : null} onClick={ViewEPUBReader}>
+                        <AutoStoriesOutlinedIcon/>
+                        <p style={{fontSize:'0.5rem', margin:'-4px 0 0 0', letterSpacing:'0.1rem', fontWeight:'lighter'}}>BOOK</p>
+                    </div>
                 </Stack>
             </div>
         </div>

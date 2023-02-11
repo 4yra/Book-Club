@@ -1,8 +1,7 @@
 import Stack from "@mui/material/Stack"
 
-export const Description = () => {
+export const Description = (props) => {
     const descriptionStyle = {
-        paddingTop: "10vh",
         textAlign: 'left',
         height: '100%',
         display: 'flex',
@@ -12,7 +11,6 @@ export const Description = () => {
         margin: '0 auto',
         width: '90%',
         maxWidth: "800px",
-        
     }
     return (
         <>
