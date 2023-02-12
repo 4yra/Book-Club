@@ -34,8 +34,6 @@ export const Landing = () => {
     }
     const conatinerDivStyle = {
         position: "realtive", 
-        // backgroundImage: `url(${bgIMG})`,
-        // backgroundSize: 'cover',
         width: "100vw",
         height : "100vh",
     }
@@ -59,18 +57,12 @@ export const Landing = () => {
                                 <h2 >The shared experience of knowledge and culture makes a good conversations.  </h2>
                                 <h4 style={{margin:'-10px 0 0 0', textAlign:'right', fontWeight:'300'}}>Join Book Clubs and grow your community</h4>
                                 <br />
-                                {/* <ul style={{fontWeight: 'bold', margin:'100px auto', fontSize:'1.2rem'}}>
-                                    <a style={{textDecoration:'none', color:'white'}} href="#search">
-                                        <li>Search for book</li>
-                                    </a>
-                                        <li>Request early access - link</li>
-                                </ul> */}
+
                                 <SearchProjectGutenberg />
                             </Stack>
                         </div>
                     </div>
-                    {/* <div id="search" className="searchBGImage" style={{color:'white',height:'50vh', backgroundColor:'red', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                    </div> */}
+
                 </div>
             }
         </div>

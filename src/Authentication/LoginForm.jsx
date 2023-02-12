@@ -73,7 +73,6 @@ export const LoginForm = () => {
                     placeholder='Password'
                     onChange={(event) => setPassword(event.target.value)}
                     />
-                    {/* <PasswordIcon style={{fontSize:'1rem', position:'absolute', right:'40px', top:'66px', color:'black'}}/> */}
                     <VpnKeyIcon style={{fontSize:'1rem', position:'absolute', right:'40px', top:'66px', color:'black'}}/>
 
                 <button type="submit" style={inputsBTN}>Login</button>
