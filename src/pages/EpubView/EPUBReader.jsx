@@ -1,9 +1,18 @@
 import React, { useState, useRef } from 'react'
-import { ReactReader } from 'react-reader'
+import { ReactReader, ReactReaderStyle } from 'react-reader'
 
 import './epubStyle.css'
 
+const ownStyles = {
+  ...ReactReaderStyle,
+  arrow: {
+    ...ReactReaderStyle.arrow,
+    color: "yellow"
+  }
+};
+
 export const EPUBReader = () => {
+
   // And your own state logic to persist state
   const [page, setPage] = useState('')
   const [location, setLocation] = useState(null)
@@ -49,6 +58,7 @@ export const EPUBReader = () => {
           getRendition={rendition => (renditionRef.current = rendition)}
           tocChanged={toc => (tocRef.current = toc)}
           showToc={true}
+          styles={ownStyles}
         />
       </div>
       <div className='pageView'>

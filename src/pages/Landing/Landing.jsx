@@ -30,7 +30,7 @@ export const Landing = () => {
         width: "90vw",
         maxWidth: "800px",
         margin: "0 auto",
-        height:'80vh',
+        height:'100vh',
     }
     const conatinerDivStyle = {
         position: "realtive", 
@@ -55,27 +55,21 @@ export const Landing = () => {
                 <div>
                     <div style={LandingStyle}>
                         <div style={descriptionStyle}>
-                            <Stack style={{textShadow: '4px 4px 5px #000000', position:'relative', bottom:'50px'}}>
+                            <Stack style={{textShadow: '4px 4px 5px #000000', position:'relative'}}>
                                 <h2 >The shared experience of knowledge and culture makes a good conversations.  </h2>
-                                <h4 style={{margin:'-10px 0 0 0', textAlign:'right', fontWeight:'300'}}>Join Book Clubs and grow your community now</h4>
+                                <h4 style={{margin:'-10px 0 0 0', textAlign:'right', fontWeight:'300'}}>Join Book Clubs and grow your community</h4>
                                 <br />
-                                <ul style={{fontWeight: 'bold', margin:'100px auto', fontSize:'1.2rem'}}>
+                                {/* <ul style={{fontWeight: 'bold', margin:'100px auto', fontSize:'1.2rem'}}>
                                     <a style={{textDecoration:'none', color:'white'}} href="#search">
                                         <li>Search for book</li>
                                     </a>
                                         <li>Request early access - link</li>
-                                </ul>
+                                </ul> */}
+                                <SearchProjectGutenberg />
                             </Stack>
                         </div>
                     </div>
-                    <div id="search" className="searchBGImage" style={{height:'50vh', backgroundColor:'red', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                        <SearchProjectGutenberg />
-                    </div>
-                    {/* <div id="" style={{height:'100vh', backgroundColor:'green'}}>
-                        <h4>Search UI project gutenberg</h4>
-                    </div>
-                    <div id="footer" style={{height:'100vh', backgroundColor:'red'}}>
-                        <h4>Footer</h4>
+                    {/* <div id="search" className="searchBGImage" style={{color:'white',height:'50vh', backgroundColor:'red', display:'flex', alignItems:'center', justifyContent:'center'}}>
                     </div> */}
                 </div>
             }

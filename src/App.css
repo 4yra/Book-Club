@@ -5,7 +5,7 @@
   --bottomNavHeight: 40px;
 }
 body {
-  color: white;
+
 }
 html {
   scroll-behavior: smooth;
@@ -80,6 +80,13 @@ html {
 }
 
 .LoginForm {
+  background-color: rgba(69, 69, 69, 0.4);
+  box-shadow: 0px 0px 7px 0px rgba(39, 39, 39, 0.4);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 30px;
+  /* border: solid 1px white; */
   width: 80%;
   max-width: 300px;
+  justify-content: flex-start;
 }
