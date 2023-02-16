@@ -33,20 +33,20 @@ export const SearchProjectGutenberg = () => {
     return (
         <div>
             <Stack>
-                <h4>
+                <h4 style={{textAlign: 'center'}}>
                    <a href="https://www.gutenberg.org/" style={{color:'white'}}><i>Project Gutenberg</i></a>  is a library of over 60,000 free eBooks
                 </h4>
                 <form onSubmit={Search}>
                 <Stack direction='row' style={{margin:'0 auto', width:'350px', justifyContent:'center'}}>
                     <input
-                        style={{width: '60%', height: '30px', borderTopLeftRadius:'10px', border:'solid red 3px', borderBottomLeftRadius:'10px', padding:'0 0 0 10px'}}
+                        style={{width: '60%', height: '30px', borderTopLeftRadius:'10px', border:'none', borderBottomLeftRadius:'10px', padding:'0 0 0 10px'}}
                         type="text"
                         id="text"
                         placeholder='Search'
                         onChange={(e) => setSearch(e.target.value)}
                     />
-                    <button type="submit"  style={{color:'white',backgroundColor:'transparent', margin:'0 0 0 2px', width: 'fit-content',border:'solid red 3px' , height: '36px', borderTopRightRadius:'10px', borderBottomRightRadius:'10px', padding:'4px'}}>
-                    <SearchIcon/>
+                    <button type="submit"  style={{color:'white', backgroundColor:'transparent', margin:'0 0 0 2px', width: 'fit-content',border:'solid black 1px' , height: '30px', borderTopRightRadius:'10px', borderBottomRightRadius:'10px', padding:'4px'}}>
+                    <SearchIcon style={{ fontSize:"1.3rem"}}/>
                     </button>
                 </Stack>
                 </form>
